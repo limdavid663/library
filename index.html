@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="left"><h1>Library</h1></div>
+        <div class="right"><h1>By David</h1></div>
+    </nav>
+    <div id="add-book-section">
+        <button class="add-new-book" style="margin: 30px; border-radius: 10px; border-style: none;  padding: 10px;"><h1>+ Add New Book</h1></button>
+        <div id="form-section">
+            <form action="" method="" >
+                <div>
+                    <label for="book-name">Name</label>
+                    <input type="text" id="book-name">
+                </div>
+                <div>
+                    <label for="book-Author">Author</label>
+                    <input type="text" id="book-Author">
+                </div>
+                <div>
+                    <label for="book-Pages">Pages</label>
+                    <input type="text" id="book-Pages">
+                </div>
+                <div id="checkbox-div">
+                    <label for="book-Read-yet">Read yet</label>
+                    <input type="checkbox" id="book-Read-yet" value="Read">
+                </div>
+                <input type="submit" id="submit" value="Submit" style="border-radius: 10px; border-style: none; padding: 10px;">
+            </form>
+        </div>
+    </div>
+    <div class="main"></div>
+    <script src="app.js"></script>
+</body>
+</html>

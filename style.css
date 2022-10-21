@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hidden{
+    display: none;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 25px;
+}
+
+nav .right{
+    margin-left: auto;
+}
+
+nav h1{
+    font-size: 50px;
+}
+
+#add-book-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#form-section{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 50px;
+}
+
+#form-section > form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#form-section > form > div{
+    display: flex;
+    flex-direction: column;
+}
+/* #form-section > form > *{
+    margin: 20px;
+} */
+
+input[type="checkbox"]{
+    position: relative;
+    height: 25px;
+    width: 25px;
+}
+
+
+
+.main{
+    margin: 30px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex: 1;
+    min-width: 380px;
+    max-width: 380px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    min-height: 250px;
+}
+
+.card button{
+    border-radius: 10px;
+    padding: 15px 50px 15px 50px;
+    border: none;
+}
+
+.card > .delete{
+    background-color: red;
+}
+
+.card > .read-yet-button{
+    background-color: greenyellow;
+}
+
