@@ -15,15 +15,9 @@ function Book (title, author, pages, readYet) {
     }
 };
 
-function clickHanddler() {
-    document.querySelector("#form-section").classList.toggle("hidden");
-}
-
 function addBookToLibrary(title, author, pages, readYet) { 
     myLibrary.push(new Book(title, author, pages, readYet));
 } 
-
-
 
 
 submitButton.addEventListener("click", (e) => {
@@ -71,8 +65,12 @@ submitButton.addEventListener("click", (e) => {
  
         document.querySelectorAll("#form-section input[type='text']").forEach((button) => button.value = "");
         readYet.checked = false;
+        document.querySelector("#form-section").close();
     }
     
     e.preventDefault();
 });
-addNewBookButton.addEventListener("click", clickHanddler);
+
+addNewBookButton.addEventListener("click", () => {
+    document.querySelector("#form-section").showModal();
+});
